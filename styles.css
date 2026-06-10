@@ -316,6 +316,54 @@ footer {
     margin-top: 30px;
 }
 
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #cccccc;
+    color: var(--text-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    z-index: 10;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-btn:hover {
+    background: var(--text-color);
+    color: #ffffff;
+    border-color: var(--text-color);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+/* Hide navigation buttons on mobile touch devices as they support native swipe */
+@media (max-width: 768px) {
+    .carousel-btn {
+        display: none;
+    }
+}
+
 .carousel-wrapper {
     display: flex;
     overflow-x: auto;
@@ -382,14 +430,17 @@ footer {
 
 .feature-card {
     padding: 35px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #cccccc; /* Strongly visible crisp border */
     background-color: #ffffff;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+    border-radius: 6px; /* Smooth rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Subtle, elegant drop shadow */
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-6px);
     border-color: var(--accent-color);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08); /* Sophisticated hover shadow */
 }
 
 .feature-card h3 {
