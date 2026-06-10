@@ -34,66 +34,81 @@
 
         <section id="project-details">
             <div class="container">
-                <!-- Project Gallery -->
+                <!-- Project Gallery (Carousel) -->
                 <div class="project-gallery">
                     <h2>Screenshots</h2>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <img src="media/Screenshot_20260610_180153-1.png" alt="Inventory Dashboard">
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide">
+                                <img src="media/Screenshot_20260610_180153-1.png" alt="Inventory Dashboard">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="media/Screenshot_20260610_180209.png" alt="Product Management">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="media/Screenshot_20260610_180209-1.png" alt="POS Register & Sales">
+                            </div>
                         </div>
-                        <div class="gallery-item">
-                            <img src="media/Screenshot_20260610_180209.png" alt="Product Management">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="media/Screenshot_20260610_180209-1.png" alt="POS Register & Sales">
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-meta-grid">
-                    <!-- Key Features -->
-                    <div class="features-section">
-                        <h2>Key Features</h2>
-                        <div class="skills-grid" style="margin-top: 40px;">
-                            <div class="skill-category">
-                                <h3>Core Management</h3>
-                                <ul>
-                                    <li><strong>Dashboard:</strong> Real-time business insights, stock alerts, and quick performance metrics.</li>
-                                    <li><strong>Product & Category Manager:</strong> Full CRUD operations for products and categories, including automatic SKU generation and custom barcode generation/exporting.</li>
-                                    <li><strong>Notifications:</strong> Built-in system alerts for low-stock products and operational events.</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Transactional Workflows</h3>
-                                <ul>
-                                    <li><strong>POS (Point of Sale):</strong> Interactive, lightweight register for processing cash and bank sales.</li>
-                                    <li><strong>Sales & Purchases:</strong> Detailed logging of transactions with automatic stock updates.</li>
-                                    <li><strong>Stock Transfer:</strong> Manage and track inventory movements across different warehouses.</li>
-                                    <li><strong>Financial Tracking:</strong> Logging and monitoring for business expenses, cash, and bank accounts.</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3>Administration & Settings</h3>
-                                <ul>
-                                    <li><strong>Warehouse Management:</strong> Track stock distribution across locations.</li>
-                                    <li><strong>Parties:</strong> Manage supplier and customer profiles.</li>
-                                    <li><strong>Staff Management:</strong> Keep records of team members and roles.</li>
-                                    <li><strong>System Settings & Personalization:</strong> Dynamic store naming, logo uploads, local currency/date format customization, and a UI theme color picker.</li>
-                                </ul>
-                            </div>
+                <!-- Key Features Section -->
+                <div class="features-section">
+                    <h2>Key Features</h2>
+                    <div class="features-row">
+                        <div class="feature-card">
+                            <h3>Core Management</h3>
+                            <ul>
+                                <li><strong>Dashboard:</strong> Real-time business insights, stock alerts, and quick performance metrics.</li>
+                                <li><strong>Product & Category Manager:</strong> Full CRUD operations for products and categories, including automatic SKU generation and custom barcode generation/exporting.</li>
+                                <li><strong>Notifications:</strong> Built-in system alerts for low-stock products and operational events.</li>
+                            </ul>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Transactional Workflows</h3>
+                            <ul>
+                                <li><strong>POS (Point of Sale):</strong> Interactive, lightweight register for processing cash and bank sales.</li>
+                                <li><strong>Sales & Purchases:</strong> Detailed logging of transactions with automatic stock updates.</li>
+                                <li><strong>Stock Transfer:</strong> Manage and track inventory movements across different warehouses.</li>
+                                <li><strong>Financial Tracking:</strong> Logging and monitoring for business expenses, cash, and bank accounts.</li>
+                            </ul>
+                        </div>
+                        <div class="feature-card">
+                            <h3>Administration & Settings</h3>
+                            <ul>
+                                <li><strong>Warehouse Management:</strong> Track stock distribution across locations.</li>
+                                <li><strong>Parties:</strong> Manage supplier and customer profiles.</li>
+                                <li><strong>Staff Management:</strong> Keep records of team members and roles.</li>
+                                <li><strong>System Settings & Personalization:</strong> Dynamic store naming, logo uploads, local currency/date format customization, and a UI theme color picker.</li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Tech Stack Sidebar -->
-                    <div class="sidebar-section">
-                        <div class="tech-stack-card">
-                            <h3>Tech Stack</h3>
-                            <ul>
-                                <li><strong>Backend:</strong> Python, Django 6.0</li>
-                                <li><strong>Database:</strong> SQLite (default)</li>
-                                <li><strong>Frontend:</strong> Responsive HTML5, Vanilla CSS, Inter Typography</li>
-                                <li><strong>Dependencies:</strong> python-barcode (barcode generation), pillow (image handling)</li>
-                            </ul>
+                <!-- Tech Stack Section -->
+                <div class="tech-stack-section">
+                    <h2>Tech Stack</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h4>Backend</h4>
+                            <p>Python, Django 6.0</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Database</h4>
+                            <p>SQLite (default)</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Frontend</h4>
+                            <p>Responsive HTML5, Vanilla CSS, Inter Typography</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Dependencies</h4>
+                            <p>python-barcode (barcode generation), pillow (image handling)</p>
                         </div>
                     </div>
                 </div>

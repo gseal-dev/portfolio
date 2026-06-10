@@ -21,5 +21,35 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
+    // Carousel Navigation & Dot Synchronization Logic
+    const wrapper = document.querySelector('.carousel-wrapper');
+    const dots = document.querySelectorAll('.carousel-dots .dot');
+    if (wrapper && dots.length > 0) {
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                wrapper.scrollTo({
+                    left: wrapper.clientWidth * index,
+                    behavior: 'smooth'
+                });
+                setActiveDot(index);
+            });
+        });
+
+        wrapper.addEventListener('scroll', () => {
+            const index = Math.round(wrapper.scrollLeft / wrapper.clientWidth);
+            setActiveDot(index);
+        });
+
+        function setActiveDot(index) {
+            dots.forEach((dot, idx) => {
+                if (idx === index) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+    }
+
     console.log("Portfolio script loaded successfully.");
 });
