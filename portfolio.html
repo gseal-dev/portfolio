@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">PORTFOLIO</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <div class="container">
+                <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+                <h1>Inventory Management</h1>
+                <p class="tagline">Modern, responsive Django-based inventory and retail management platform designed to help businesses manage their products, sales, purchases, and overall operations in one place.</p>
+            </div>
+        </section>
+
+        <section id="project-details">
+            <div class="container">
+                <!-- Project Gallery -->
+                <div class="project-gallery">
+                    <h2>Screenshots</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="media/Screenshot_20260610_180153-1.png" alt="Inventory Dashboard">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="media/Screenshot_20260610_180209.png" alt="Product Management">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="media/Screenshot_20260610_180209-1.png" alt="POS Register & Sales">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-meta-grid">
+                    <!-- Key Features -->
+                    <div class="features-section">
+                        <h2>Key Features</h2>
+                        <div class="skills-grid" style="margin-top: 40px;">
+                            <div class="skill-category">
+                                <h3>Core Management</h3>
+                                <ul>
+                                    <li><strong>Dashboard:</strong> Real-time business insights, stock alerts, and quick performance metrics.</li>
+                                    <li><strong>Product & Category Manager:</strong> Full CRUD operations for products and categories, including automatic SKU generation and custom barcode generation/exporting.</li>
+                                    <li><strong>Notifications:</strong> Built-in system alerts for low-stock products and operational events.</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Transactional Workflows</h3>
+                                <ul>
+                                    <li><strong>POS (Point of Sale):</strong> Interactive, lightweight register for processing cash and bank sales.</li>
+                                    <li><strong>Sales & Purchases:</strong> Detailed logging of transactions with automatic stock updates.</li>
+                                    <li><strong>Stock Transfer:</strong> Manage and track inventory movements across different warehouses.</li>
+                                    <li><strong>Financial Tracking:</strong> Logging and monitoring for business expenses, cash, and bank accounts.</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Administration & Settings</h3>
+                                <ul>
+                                    <li><strong>Warehouse Management:</strong> Track stock distribution across locations.</li>
+                                    <li><strong>Parties:</strong> Manage supplier and customer profiles.</li>
+                                    <li><strong>Staff Management:</strong> Keep records of team members and roles.</li>
+                                    <li><strong>System Settings & Personalization:</strong> Dynamic store naming, logo uploads, local currency/date format customization, and a UI theme color picker.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack Sidebar -->
+                    <div class="sidebar-section">
+                        <div class="tech-stack-card">
+                            <h3>Tech Stack</h3>
+                            <ul>
+                                <li><strong>Backend:</strong> Python, Django 6.0</li>
+                                <li><strong>Database:</strong> SQLite (default)</li>
+                                <li><strong>Frontend:</strong> Responsive HTML5, Vanilla CSS, Inter Typography</li>
+                                <li><strong>Dependencies:</strong> python-barcode (barcode generation), pillow (image handling)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Jesiel Gavina. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
